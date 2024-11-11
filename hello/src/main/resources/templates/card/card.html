@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pokemon-card {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc00;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.pokemon-name {
+    font-size: 1.5em;
+}
+
+.pokemon-hp {
+    font-size: 1.2em;
+}
+
+.pokemon-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.pokemon-description {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.move {
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="pokemon-card">
+        <div class="card-header">
+            <h2 class="pokemon-name">Pikachu</h2>
+            <p class="pokemon-hp">HP 60</p>
+        </div>
+        <img src="/images/card/pikachu.png" alt="Pikachu" class="pokemon-image">
+        <div class="card-body">
+            <p class="pokemon-description">An Electric-type Pokémon known for its signature move, Thunderbolt.</p>
+            <div class="move">
+                <p><strong>Thunder Shock</strong></p>
+                <p>Damage: 30</p>
+            </div>
+            <div class="move">
+                <p><strong>Quick Attack</strong></p>
+                <p>Damage: 20</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
